@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/dawn_logo.svg";
+import logo from "../assets/dawn_logo2.svg";
 
 const Loading = ({ loading }) => {
   return (

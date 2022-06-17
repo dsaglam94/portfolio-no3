@@ -179,31 +179,39 @@ const ContactHomePage = () => {
             <div className="text-xs md:text-sm text-center">
               <p>Or you can follow me on social media and say hi!</p>
             </div>
-            <div className="flex items-center justify-center gap-4">
+            <div className="flex items-center justify-center gap-6 md:gap-8">
               <a
                 className="flex flex-col items-center gap-2 hover:text-accent text-xs hover:-translate-y-2 duration-300 ease-in"
-                href="/"
+                href="https://github.com/dsaglam94"
+                target="_blank"
+                rel="noreferrer"
               >
                 <FaGithub className="text-3xl" />
                 GitHub
               </a>
               <a
                 className="text-xs flex flex-col items-center gap-2 hover:text-accent hover:-translate-y-2 duration-300 ease-in"
-                href="/"
+                href="https://www.linkedin.com/in/d-saglam/"
+                target="_blank"
+                rel="noreferrer"
               >
                 <FaLinkedinIn className="text-3xl" />
                 LinkedIn
               </a>
               <a
                 className="text-xs flex flex-col items-center gap-2 hover:text-accent hover:-translate-y-2 duration-300 ease-in"
-                href="/"
+                href="https://twitter.com/dsaglam94"
+                target="_blank"
+                rel="noreferrer"
               >
                 <FaTwitter className="text-3xl" />
                 Twitter
               </a>
               <a
                 className="text-xs flex flex-col items-center gap-2 hover:text-accent hover:-translate-y-2 duration-300 ease-in"
-                href="/"
+                href="https://www.instagram.com/monsieur.antika/"
+                target="_blank"
+                rel="noreferrer"
               >
                 <FaInstagram className="text-3xl" />
                 Instagram

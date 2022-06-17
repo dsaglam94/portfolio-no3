@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import ThemeToggle from "./ThemeToggle";
-import logo from "../assets/dawn_logo.svg";
+import logo from "../assets/dawn_logo2.svg";
 import { Link } from "react-router-dom";
 import MenuToggle from "./MenuToggle";
-import CV from "../assets/dawn_cv.pdf";
+import CV from "../assets/dawn_cv_eng_1page.pdf";
 
 const Navbar = ({ scrollDirection }) => {
   const [nav, setNav] = useState(false);
@@ -15,8 +15,10 @@ const Navbar = ({ scrollDirection }) => {
   // don't allow scrolling when nav is open
   if (nav) {
     window.document.documentElement.style.overflowY = "hidden";
+    window.document.documentElement.classList.add("lock-screen");
   } else {
     window.document.documentElement.style.overflowY = "scroll";
+    window.document.documentElement.classList.remove("lock-screen");
   }
 
   return (
@@ -31,7 +33,7 @@ const Navbar = ({ scrollDirection }) => {
         <div className="flex items-center h-full w-full">
           <div className="flex flex-col items-center text-center">
             <Link to="/">
-              <img className="w-full h-10 block" src={logo} alt="logo" />
+              <img className="w-full h-8 block" src={logo} alt="logo" />
             </Link>
           </div>
           <div className="flex items-center w-full">
@@ -75,7 +77,7 @@ const Navbar = ({ scrollDirection }) => {
         <div>
           <Link to="/">
             <img
-              className="w-full h-10 relative z-[100]"
+              className="w-full h-8 relative z-[100]"
               src={logo}
               alt="logo"
             />

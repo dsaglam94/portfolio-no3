@@ -50,6 +50,13 @@ html {
   --color-bg-button: transparent;
 }
 
+.lock-screen {
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+  position: fixed;
+}
+
 .border-neon {
   border: 0.2rem solid #fff;
   border-radius: 0.5rem;
@@ -77,22 +84,12 @@ html {
       0 0 20px var(--color-text-accent), 0 0 25px var(--color-text-accent),
       0 0 30px #fff, 0 0 70px #fff, 0 0 100px #fff, 0 0 150px #fff,
       0 0 200px #fff;
-    /* text-shadow: 0 0 4px var(--color-text-accent),
-      0 0 11px var(--color-text-accent), 0 0 19px var(--color-text-accent),
-      0 0 20px #fff, 0 0 60px #fff, 0 0 90px #fff, 0 0 100px #fff,
-      0 0 150px #fff; */
-    /* filter: drop-shadow(0 0 10px var(--color-text-accent))
-      drop-shadow(0 0 50px var(--color-text-accent))
-      drop-shadow(0 0 100px var(--color-text-accent)); */
-    /* drop-shadow(0 0 150px var(--color-text-accent)); */
-    /* drop-shadow(0 0 150px var(--color-text-accent)); */
   }
 
   20%,
   24%,
   55% {
     text-shadow: none;
-    /* filter: none; */
   }
 }
 
@@ -204,22 +201,6 @@ html {
   z-index: -1;
   transition: width 0.3s ease-in;
 }
-/* 
-.btn-primary {
-  z-index: 1;
-  position: relative;
-}
-
-.btn-primary::after {
-  content: "";
-  position: absolute;
-  top: 7px;
-  left: 7px;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  border: 2px solid cyan;
-} */
 
 .bg-instagram {
   background: linear-gradient(
@@ -235,11 +216,6 @@ html {
 #text__glitch {
   text-shadow: red -3px 0, cyan 3px 0;
 }
-
-/* .link-underline {
-  position: relative;
-  z-index: 1;
-} */
 
 .link-underline::before {
   content: "";

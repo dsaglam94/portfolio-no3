@@ -37,8 +37,8 @@ const Project = ({ work, idx }) => {
         data-aos-duration="700"
         className="md:p-6 w-full md:w-1/2"
       >
-        <div className="md:text-right space-y-2 flex items-center justify-between">
-          <span className="text-primary flex items-center md:justify-end gap-1 order-1">
+        <div className="md:text-right space-y-2 md:space-y-0 flex flex-col md:flex-row items-start md:items-center justify-between">
+          <span className="text-sm md:text-[1rem] text-primary flex items-center md:justify-end gap-1 md:order-1">
             <FaAsterisk
               className={
                 work?.label === "Fresh"
@@ -51,8 +51,8 @@ const Project = ({ work, idx }) => {
           <h1
             className={
               idx % 2 === 1
-                ? "text-lg font-bold text-primary order-1"
-                : "text-lg font-bold text-primary order-0"
+                ? "text-lg font-bold text-primary md:order-1"
+                : "text-lg font-bold text-primary md:order-0"
             }
           >
             {work?.title}

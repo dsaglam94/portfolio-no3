@@ -23,7 +23,12 @@ const SocialLinks = ({ offsetY }) => {
       </div>
       <div className="bg-[#4f4f4f] w-[190px] p-4 hover:translate-x-[7rem] duration-300 ease-in">
         <p className="font-bold tracking-wider text-white">
-          <a href="/" className="flex items-center justify-between">
+          <a
+            href="https://github.com/dsaglam94"
+            target="_blank"
+            rel="noreferrer"
+            className="flex items-center justify-between"
+          >
             GitHub
             <FaGithub className="text-3xl" />
           </a>
@@ -31,7 +36,12 @@ const SocialLinks = ({ offsetY }) => {
       </div>
       <div className="bg-[#0177b5] w-[190px] p-4 hover:translate-x-[7rem] duration-300 ease-in group">
         <p className="font-bold tracking-wider text-white">
-          <a href="/" className="flex items-center justify-between">
+          <a
+            href="https://www.linkedin.com/in/d-saglam/"
+            target="_blank"
+            rel="noreferrer"
+            className="flex items-center justify-between"
+          >
             LinkedIn
             <FaLinkedinIn className="text-3xl" />
           </a>
@@ -39,7 +49,12 @@ const SocialLinks = ({ offsetY }) => {
       </div>
       <div className="bg-[#04abed] w-[190px] p-4 hover:translate-x-[7rem] duration-300 ease-in group">
         <p className="font-bold tracking-wider text-white">
-          <a href="/" className="flex items-center justify-between">
+          <a
+            href="https://twitter.com/dsaglam94"
+            target="_blank"
+            rel="noreferrer"
+            className="flex items-center justify-between"
+          >
             Twitter
             <FaTwitter className="text-3xl" />
           </a>
@@ -47,7 +62,12 @@ const SocialLinks = ({ offsetY }) => {
       </div>
       <div className="bg-instagram w-[190px] p-4 hover:translate-x-[7rem] duration-300 ease-in group">
         <p className="font-bold tracking-wider text-white">
-          <a href="/" className="flex items-center justify-between">
+          <a
+            href="https://www.instagram.com/monsieur.antika/"
+            target="_blank"
+            rel="noreferrer"
+            className="flex items-center justify-between"
+          >
             Instagram
             <FaInstagram className="text-3xl" />
           </a>
