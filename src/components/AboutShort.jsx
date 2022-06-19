@@ -26,7 +26,7 @@ const AboutShort = ({ offsetY }) => {
           data-aos-duration="1000"
           className="md:w-2/5 md:text-right text-center space-y-2 tracking-wider"
         >
-          <p className="text-primary text-sm sm:text-md md:text-xl font-bold text-center md:text-right">
+          <p className="text-primary text-md sm:text-lg md:text-2xl font-bold text-center md:text-right">
             Intellectual growth should commence at birth and cease only at
             death.
           </p>
@@ -38,7 +38,7 @@ const AboutShort = ({ offsetY }) => {
           data-aos="fade-left"
           data-aos-delay="500"
           data-aos-duration="700"
-          className="md:flex md:flex-col md:gap-2 text-sm md:text-md text-secondary text-center md:w-2/5  md:text-left"
+          className="md:flex md:flex-col md:gap-2 text-md md:text-lg text-secondary text-center md:w-2/5  md:text-left"
         >
           I’m always curious about learning new tech skills, tools, and
           concepts. I enjoy the process of turning ideas into reality using

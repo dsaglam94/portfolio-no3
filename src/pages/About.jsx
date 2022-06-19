@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import HomeNavigation from "../components/HomeNavigation";
-import SocialLinks from "../components/SocialLinks";
 import Loading from "../components/Loading";
+import Resume from "../components/Resume";
+import Socials from "../components/Socials";
 
 const About = () => {
   const [loading, setLoading] = useState(false);
@@ -22,7 +23,8 @@ const About = () => {
     <div className="min-h-screen bg-primary pt-32 overflow-x-hidden duration-300 ease-in">
       {loading ? <Loading loading={loading} /> : <Loading loading={loading} />}
       <HomeNavigation page={"About"} />
-      <SocialLinks />
+      <Socials />
+      <Resume />
       <div className="text-sm md:text-[1rem] leading-6 text-primary md:w-[70%] w-full mx-auto px-5 py-10 space-y-6">
         <p>
           I am a former English and French teacher whose passion is tech. I

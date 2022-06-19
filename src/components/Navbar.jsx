@@ -40,33 +40,32 @@ const Navbar = ({ scrollDirection }) => {
             <div className="text-heading text-center ml-auto">
               <ul className="flex items-center gap-20 font-bold tracking-wider">
                 <Link to="/about">
-                  <li className="text-sm 2xl:text-[1.2rem] hover:text-accent">
-                    <span className="text-xs text-accent mr-2">01.</span>About
+                  <li className="text-md 2xl:text-[1.2rem] hover:text-accent">
+                    <span className="text-sm text-accent mr-2">01.</span>About
                   </li>
                 </Link>
                 <Link to="/works">
-                  <li className="text-sm 2xl:text-[1.2rem] hover:text-accent">
-                    <span className="text-xs text-accent mr-2">02.</span>Works
+                  <li className="text-md 2xl:text-[1.2rem] hover:text-accent">
+                    <span className="text-sm text-accent mr-2">02.</span>Works
                   </li>
                 </Link>
                 <Link to="/contact">
-                  <li className="text-sm 2xl:text-[1.2rem] hover:text-accent">
-                    <span className="text-xs text-accent mr-2">03.</span>Contact
+                  <li className="text-md 2xl:text-[1.2rem] hover:text-accent">
+                    <span className="text-sm text-accent mr-2">03.</span>Contact
                   </li>
                 </Link>
-                <li className="text-sm 2xl:text-[1.2rem] text-accent">
+                <li className="text-md 2xl:text-[1.2rem] hover:text-accent">
                   <a
-                    className="link-underline hover:before:w-full relative"
-                    href={CV}
+                    href="https://blog.imdawn.me/"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    Resume
+                    <span className="text-sm text-accent mr-2">04.</span>Blog
                   </a>
                 </li>
               </ul>
             </div>
-            <div className="ml-auto">
+            <div className="ml-auto flex items-center gap-20">
               <ThemeToggle />
             </div>
           </div>
@@ -113,12 +112,21 @@ const Navbar = ({ scrollDirection }) => {
                   Contact
                 </li>
               </Link>
+              <li className="hover:text-accent">
+                <a
+                  href="https://blog.imdawn.me/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <span className="text-xl text-accent mr-6">04.</span>Blog
+                </a>
+              </li>
             </ul>
           </div>
           <div className="flex items-center justify-between w-full">
             <a
               onClick={handleNav}
-              className="link-underline hover:before:w-full text-accent text-xl font-bold relative"
+              className="text-accent text-neon text-xl font-bold hover:scale-105 duration-300 ease-in"
               href={CV}
               target="_blank"
               rel="noreferrer"

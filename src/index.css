@@ -2,9 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"); */
-
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
 
 :root {
   scrollbar-color: var(--color-text-accent) transparent;
@@ -12,8 +10,7 @@
 }
 
 html {
-  /* font-family: "Lato", sans-serif; */
-  font-family: "Roboto Mono", monospace;
+  font-family: "Lato", sans-serif;
 }
 
 ::-webkit-scrollbar {
@@ -34,7 +31,7 @@ html {
   --color-text-primary: #d9e0f8;
   --color-text-secondary: #b7bcc8;
   --color-text-heading: #e6f1ff;
-  --color-text-accent: #0dfdd7;
+  --color-text-accent: #00f4d0;
   --color-bg-input: #4a5361;
   --color-bg-button: #fc2054;
 }
@@ -66,7 +63,14 @@ html {
     inset 0 0 0.5rem var(--color-text-accent);
 }
 
+/* Neon Text */
 .text-neon {
+  filter: drop-shadow(0 0 2px var(--color-text-accent))
+    drop-shadow(0 0 10px var(--color-text-accent));
+}
+
+/* Neon Animation */
+.neon-flicker {
   animation: flicker 1.5s infinite alternate;
   color: var(--color-text-accent);
   opacity: 0.9;
@@ -79,17 +83,16 @@ html {
   25%,
   53%,
   57%,
+  80%,
   100% {
-    text-shadow: 0 0 5px var(--color-text-accent),
-      0 0 20px var(--color-text-accent), 0 0 25px var(--color-text-accent),
-      0 0 30px #fff, 0 0 70px #fff, 0 0 100px #fff, 0 0 150px #fff,
-      0 0 200px #fff;
+    filter: drop-shadow(0 0 2px var(--color-text-accent))
+      drop-shadow(0 0 10px var(--color-text-accent));
   }
 
   20%,
   24%,
   55% {
-    text-shadow: none;
+    filter: none;
   }
 }
 
@@ -187,21 +190,6 @@ html {
   transform: translateX(100px);
 }
 
-/* Button Primary Custom Styles */
-
-.btn-primary::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -50px;
-  width: 0;
-  height: 100%;
-  transform: skewX(-35deg);
-  background-color: var(--color-bg-secondary);
-  z-index: -1;
-  transition: width 0.3s ease-in;
-}
-
 .bg-instagram {
   background: linear-gradient(
     -25deg,
@@ -226,7 +214,7 @@ html {
   height: 2px;
   border-radius: 0.5rem;
   background-color: var(--color-text-accent);
-  transform-origin: left;
+  transform-origin: center;
   transition: all 0.3s ease-in;
   z-index: 10;
 }

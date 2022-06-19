@@ -1,15 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import AboutShort from "../components/AboutShort";
-import Circle from "../components/Circle";
 import ContactHomePage from "../components/ContactHomePage";
 import Skills from "../components/Skills";
-import SocialLinks from "../components/SocialLinks";
 import WorksHome from "../components/WorksHome";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Footer from "../components/Footer";
 import Loading from "../components/Loading";
+import Hero from "../components/Hero";
 AOS.init();
 
 const Home = ({ offsetY }) => {
@@ -31,54 +30,7 @@ const Home = ({ offsetY }) => {
   return (
     <div className="bg-primary w-full overflow-x-hidden duration-300 ease-in">
       {loading ? <Loading loading={loading} /> : <Loading loading={loading} />}
-      <div className="flex flex-col w-full min-h-screen items-center justify-center py-14">
-        <div className="w-full flex flex-col items-center justify-center tracking-widest mt-auto">
-          <div className="text-accent font-bold text-xs md:text-[1rem] mb-2 flex items-center gap-2">
-            <p
-              data-aos="fade-right"
-              data-aos-delay="2700"
-              data-aos-duration="1000"
-            >
-              Creative.{" "}
-            </p>
-            <p
-              data-aos="fade-right"
-              data-aos-delay="2400"
-              data-aos-duration="1000"
-            >
-              Passionate.
-            </p>
-            <p
-              data-aos="fade-right"
-              data-aos-delay="2200"
-              data-aos-duration="1000"
-            >
-              Enthusiastic.
-            </p>
-          </div>
-          <div className="font-bold text-[3.5rem] md:text-[6rem] mb-2">
-            <p className="text-heading">
-              I'm <span id="text__glitch">Dawn</span>
-            </p>
-          </div>
-          <div className="text-heading flex items-center gap-2">
-            <span className="text-lg font-bold">&lt;</span>
-            <p className="text-xs md:text-[1rem]">
-              A Full-Stack MERN developer
-            </p>
-            <span className="text-lg font-bold">/&gt;</span>
-          </div>
-          <Link to="/contact">
-            <div className="text-neon text-heading text-md md:text-xl font-bold tracking-widest w-full text-center mt-10">
-              CONTACT ME
-            </div>
-          </Link>
-        </div>
-        <SocialLinks offsetY={offsetY} />
-        <div className="mt-auto">
-          <Circle offsetY={offsetY} />
-        </div>
-      </div>
+      <Hero offsetY={offsetY} />
       <AboutShort offsetY={offsetY} />
       <Skills offsetY={offsetY} />
       <div className="flex items-center justify-center my-10">
@@ -95,7 +47,7 @@ const Home = ({ offsetY }) => {
       </div>
       <WorksHome offsetY={offsetY} />
       <Link
-        className="text-neon tracking-wider font-bold mt-10 mb-20 flex items-center justify-center"
+        className="text-neon text-accent tracking-wider text-lg font-bold mb-32 flex items-center justify-center hover:scale-105 duration-300 ease-in"
         to="/works"
       >
         Check More

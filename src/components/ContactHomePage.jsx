@@ -57,9 +57,9 @@ const ContactHomePage = () => {
           data-aos-duration="700"
           className="md:w-1/2"
         >
-          <p className="text-secondary text-center md:text-left py-4 text-xs md:text-sm">
-            You want to get in touch, talk about a project collaboration? Just
-            fill up the form below or send an email to{" "}
+          <p className="text-secondary text-center md:text-left py-4 text-sm md:text-[1rem]">
+            You want to get in touch or talk about a project collaboration? Just
+            fill in the form below or send an email to{" "}
             <a
               className="link-underline text-accent relative hover:before:w-full"
               href="mailto:info@imdawn.me"
@@ -77,7 +77,7 @@ const ContactHomePage = () => {
               </label>
               <input
                 onChange={(e) => setFullName(e.target.value)}
-                className="bg-secondary p-3 shadow-xl w-full rounded-md text-xs md:text-sm"
+                className="bg-secondary p-3 shadow-xl w-full rounded-md text-sm md:text-[1rem]"
                 type="text"
                 id="name_input"
                 name="name"
@@ -90,7 +90,7 @@ const ContactHomePage = () => {
               </label>
               <input
                 onChange={(e) => setEmail(e.target.value)}
-                className="bg-secondary p-3 shadow-xl w-full rounded-md text-xs md:text-sm"
+                className="bg-secondary p-3 shadow-xl w-full rounded-md text-sm md:text-[1rem]"
                 type="email"
                 id="email_input"
                 name="email"
@@ -104,7 +104,7 @@ const ContactHomePage = () => {
             </label>
             <input
               onChange={(e) => setSubject(e.target.value)}
-              className="bg-secondary p-3 shadow-xl rounded-md text-xs md:text-sm"
+              className="bg-secondary p-3 shadow-xl rounded-md text-sm md:text-[1rem]"
               type="text"
               id="subject_input"
               name="subject"
@@ -114,7 +114,7 @@ const ContactHomePage = () => {
             />
             <textarea
               onChange={(e) => setMessage(e.target.value)}
-              className="bg-secondary p-3 shadow-xl rounded-md text-xs md:text-sm"
+              className="bg-secondary p-3 shadow-xl rounded-md text-sm md:text-[1rem]"
               placeholder="Your awesome message"
               name="message"
               value={message}
@@ -122,7 +122,7 @@ const ContactHomePage = () => {
               rows="10"
               required
             ></textarea>
-            <button className="text-neon tracking-wider font-bold text-heading py-4 text-md">
+            <button className="text-neon text-accent tracking-wider font-bold py-4 text-lg hover:scale-105 duration-300 ease-in">
               Submit
             </button>
           </form>
@@ -134,20 +134,20 @@ const ContactHomePage = () => {
           data-aos-duration="1000"
           className="w-full md:w-1/2 p-10 bg-secondary space-y-10 shadow-xl rounded-md"
         >
-          <h2 className="text-heading font-bold text-xl md:text-3xl tracking-wide text-left">
+          <h2 className="text-heading font-bold text-2xl md:text-3xl tracking-wide text-left">
             Info
           </h2>
           <div className="flex flex-col md:flex-row justify-center items-start w-full gap-4">
             <div className="flex items-start justify-center md:w-1/2 gap-6">
               <AiOutlineMail className="text-primary text-xl md:text-2xl mt-1" />
               <div className="flex flex-col items-start justify-center gap-2 whitespace-nowrap">
-                <h2 className="text-primary font-bold text-md md:text-lg">
+                <h2 className="text-primary font-bold text-xl md:text-2xl">
                   Have a question?
                 </h2>
-                <p className="text-xs md:text-sm text-secondary">
+                <p className="text-[1rem] text-secondary">
                   I am here to help you.
                 </p>
-                <p className="text-xs md:text-sm text-secondary">
+                <p className="text-[1rem] text-secondary">
                   Email me at:
                   <a
                     className="link-underline hover:before:w-full relative text-accent"
@@ -162,13 +162,11 @@ const ContactHomePage = () => {
             <div className="flex items-start justify-center md:w-1/2 gap-6">
               <MdOutlineLocationCity className="text-primary text-2xl mt-1" />
               <div className="flex flex-col items-start justify-center gap-2">
-                <h2 className="text-primary font-bold text-md md:text-lg">
+                <h2 className="text-primary font-bold text-xl md:text-2xl">
                   Current location
                 </h2>
-                <p className="text-xs md:text-sm text-secondary">
-                  Turkey, Izmir
-                </p>
-                <p className="text-xs md:text-sm text-secondary">
+                <p className="text-[1rem] text-secondary">Turkey, Izmir</p>
+                <p className="text-[1rem] text-secondary">
                   Serving clients worldwide.
                 </p>
               </div>
@@ -176,7 +174,7 @@ const ContactHomePage = () => {
           </div>
 
           <div className="text-primary flex flex-col items-center justify-center gap-10">
-            <div className="text-xs md:text-sm text-center">
+            <div className="text-[1rem] text-center">
               <p>Or you can follow me on social media and say hi!</p>
             </div>
             <div className="flex items-center justify-center gap-6 md:gap-8">

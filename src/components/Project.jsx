@@ -68,8 +68,8 @@ const Project = ({ work, idx }) => {
           <p
             className={
               idx % 2 === 0
-                ? "text-xs md:text-[0.85rem] leading-6 md:w-[70%]"
-                : "text-xs md:text-[0.85rem] leading-6 ml-auto md:w-[70%]"
+                ? "text-sm md:text-[1rem] leading-6 md:w-[70%]"
+                : "text-sm md:text-[1rem] leading-6 ml-auto md:w-[70%]"
             }
           >
             {work?.description}
@@ -87,8 +87,8 @@ const Project = ({ work, idx }) => {
         <div
           className={
             idx % 2 === 0
-              ? "text-xs space-x-4 font-bold text-secondary md:text-right my-6"
-              : "text-xs space-x-4 font-bold text-secondary md:text-left my-6"
+              ? "text-sm space-x-4 font-bold text-secondary md:text-right my-6"
+              : "text-sm space-x-4 font-bold text-secondary md:text-left my-6"
           }
         >
           {work.techs.map((tech, idx) => (
@@ -99,13 +99,13 @@ const Project = ({ work, idx }) => {
         <div className="md:hidden w-full flex items-center justify-between my-4 text-primary">
           <div className="flex items-center gap-4">
             <a
-              className="flex items-center gap-2 text-xs md:text-sm hover:text-accent"
+              className="flex items-center gap-2 text-sm md:text-[1rem] hover:text-accent"
               href={work?.source_code}
             >
               <BsGithub className="inline-block text-2xl" /> Source Code
             </a>
             <a
-              className="flex items-center gap-2 text-xs md:text-sm hover:text-accent"
+              className="flex items-center gap-2 text-sm md:text-[1rem] hover:text-accent"
               href={work?.live_preview}
             >
               <TbWorld className="inline-block text-2xl" /> Live Preview
