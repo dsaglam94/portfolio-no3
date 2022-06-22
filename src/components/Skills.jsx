@@ -12,6 +12,7 @@ import {
   SiJquery,
   SiBootstrap,
   SiNodedotjs,
+  SiTypescript,
 } from "react-icons/si";
 import { DiSass } from "react-icons/di";
 
@@ -80,6 +81,16 @@ const Skills = ({ offsetY }) => {
             <div>
               <p className="text-primary font-bold text-xs md:text-lg">
                 JavaScript
+              </p>
+            </div>
+          </div>
+          <div className="p-2 md:p-10 flex flex-col items-center space-y-6">
+            <div>
+              <SiTypescript className="text-primary text-4xl md:text-5xl" />
+            </div>
+            <div>
+              <p className="text-primary font-bold text-xs md:text-lg">
+                TypeScript
               </p>
             </div>
           </div>

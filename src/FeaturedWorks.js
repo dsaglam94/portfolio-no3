@@ -2,17 +2,22 @@
 
 const featuredWorksData = [
   {
-    title: "CryptoHangar",
+    title: "Sneakers e-Commerce",
     label: "Fresh",
     description:
+      "I tried my best to utilize React's 'props' and 'components' features in this project. In order to make the app more dynamic, I created my own product data and implemented to the app so any changes made in product details will update the item. Using TailwindCSS with my custom properties give me more freedom when it comes to styling.",
+    techs: ["ReactJs", "TailwindCSS"],
+    imgUrl:
+      "https://raw.githubusercontent.com/dsaglam94/sneakers-ecommerce/main/sneakers.gif",
+    source_code: "https://github.com/dsaglam94/sneakers-ecommerce.git",
+    live_preview: "https://imdawn-sneakers-ecommerce.netlify.app/",
+  },
+  {
+    title: "CryptoHangar",
+    label: "New",
+    description:
       "CoinGeko API allows you to fetch great amount of data for crypto web apps. So I built this project around this API to strengthen my CRUD (Create, Read, Update, Delete) knowledge along with utilizing data with React hooks. For the backend I used Firebase's database. Users can create an account, sign in and add or delete their favorite coins to their watch list.",
-    techs: [
-      "ReactJs",
-      "TailwindCSS",
-      "Firebase",
-      "CoinGeko API",
-      "Styled Components",
-    ],
+    techs: ["ReactJs", "TailwindCSS", "Firebase", "CoinGeko API"],
     imgUrl:
       "https://raw.githubusercontent.com/dsaglam94/react_crypto_webapp/main/crypto_hangar.gif",
     source_code: "https://github.com/dsaglam94/react_crypto_webapp.git",
@@ -23,13 +28,7 @@ const featuredWorksData = [
     label: "New",
     description:
       "I built this project to strengthen my CRUD (Create, Read, Update, Delete) knowledge. Movie app is not one of the most original ideas but it gives you valuable practice opportunities. I love using ReactJs and Firebase together, it gives you so much power. Users can create an account, sign in and add or delete movies to their watch list.",
-    techs: [
-      "ReactJs",
-      "TailwindCSS",
-      "Firebase",
-      "TMDb API",
-      "Styled Components",
-    ],
+    techs: ["ReactJs", "TailwindCSS", "Firebase", "TMDb API"],
     imgUrl:
       "https://raw.githubusercontent.com/dsaglam94/React_myMovie-app/main/mymovie_react.gif",
     source_code: "https://github.com/dsaglam94/React_myMovie-app.git",
@@ -51,7 +50,7 @@ const featuredWorksData = [
     label: "02 June, 2022",
     description:
       "Yes, it is definitely not an original idea of building a Todolist app. But this simple project allowed me to experience full CRUD operations so it gave me great insights. Also implementing the simple CRUD logic by utilizing ReactJs was a tremendous experience. I used Firebase's database to keep the data of each user. They can create an account and start adding, completing, deleting or filtering out the target list.",
-    techs: ["ReactJs", "TailwindCSS", "Firebase", "Styled Components"],
+    techs: ["ReactJs", "TailwindCSS", "Firebase"],
     imgUrl:
       "https://raw.githubusercontent.com/dsaglam94/React_TodoList_App/main/todolist.gif",
     source_code: "https://github.com/dsaglam94/React_TodoList_App.git",

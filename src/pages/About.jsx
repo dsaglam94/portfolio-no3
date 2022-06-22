@@ -25,7 +25,7 @@ const About = () => {
       <HomeNavigation page={"About"} />
       <Socials />
       <Resume />
-      <div className="text-sm md:text-[1rem] leading-6 text-primary md:w-[70%] w-full mx-auto px-5 py-10 space-y-6">
+      <div className="text-sm md:text-[1rem] leading-7 text-primary md:w-[65%] w-full mx-auto px-5 py-10 space-y-6">
         <p>
           I am a former English and French teacher whose passion is tech. I
           ignored my passion for a long time until I decided to take this scary
