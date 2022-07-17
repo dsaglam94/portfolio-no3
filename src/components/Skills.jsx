@@ -170,7 +170,7 @@ const Skills = ({ offsetY }) => {
             </div>
             <div>
               <p className="text-primary font-bold text-xs md:text-lg">
-                jQuerry
+                jQuery
               </p>
             </div>
           </div>
